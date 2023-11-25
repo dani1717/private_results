@@ -1,0 +1,58 @@
+<table class="dataframe table table-condensed">
+  <thead>
+    <tr style="text-align: right;">
+      <th>date</th>
+      <th>test_scenario</th>
+      <th>accuracy_windows_soft</th>
+      <th>accuracy_windows_hard</th>
+      <th>window_size_seconds</th>
+      <th>overlap_seconds</th>
+      <th>frame_size_seconds</th>
+      <th>stride_between_frames_seconds</th>
+      <th>thinning_ellipse_fitting</th>
+      <th>ab_ratio_max</th>
+      <th>normalize_signals</th>
+      <th>cv_with_scenarios</th>
+      <th>n_folds</th>
+      <th>budgets_hpo</th>
+      <th>n_top_classes</th>
+      <th>scaleAllFirst</th>
+      <th>best_params</th>
+      <th>acc_test_SVC</th>
+      <th>acc_test_RF</th>
+      <th>acc_test_ET</th>
+      <th>acc_test_DNN</th>
+      <th>acc_frames_test_hardVoting</th>
+      <th>acc_frames_test_softVoting</th>
+      <th>comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2023-11-25 18:46:17.128207</td>
+      <td>mixed</td>
+      <td>0.298531</td>
+      <td>0.292343</td>
+      <td>12</td>
+      <td>0</td>
+      <td>7</td>
+      <td>0.5</td>
+      <td>100</td>
+      <td>3</td>
+      <td>True</td>
+      <td>False</td>
+      <td>5</td>
+      <td>{'SVC': 40, 'RF': 40, 'Extra-Trees': 40, 'HGB': 40, 'DNN': 65}</td>
+      <td>3</td>
+      <td>True</td>
+      <td>{'SVC': {'C': 8.028010077358902, 'gamma': 0.006720691125303213, 'probability': True}, 'RF': {'n_estimators': 626, 'max_depth': 25, 'min_samples_split': 5}, 'Extra-Trees': {'n_estimators': 492, 'max_depth': 29, 'min_samples_split': 8, 'min_samples_leaf': 2, 'max_features': 44}, 'HGB': {'learning_rate': 0.11667313904816137, 'max_iter': 199, 'max_leaf_nodes': 150, 'max_depth': 35, 'min_samples_leaf': 80}, 'DNN': {'hidden_layer_sizes': (20, 73), 'activation': 'relu', 'alpha': 0.0006100212095641494}}</td>
+      <td>0.241763</td>
+      <td>0.244006</td>
+      <td>0.232405</td>
+      <td>0.246017</td>
+      <td>0.264965</td>
+      <td>0.271848</td>
+      <td>kind of CV for multiSc</td>
+    </tr>
+  </tbody>
+</table>
